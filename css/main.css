@@ -118,6 +118,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow-y: hidden;
 }
 
 .fira-mono-regular {

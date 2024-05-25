@@ -26,4 +26,8 @@
     .project {
         flex-direction: column-reverse;
     }
+
+    .about-project {
+        max-width: 100vw;
+    }
 }
