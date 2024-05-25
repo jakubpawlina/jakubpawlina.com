@@ -1,0 +1,9 @@
+.about {
+    max-width: 40vw;
+}
+
+@media only screen and (max-width: 992px) {
+    .about {
+        max-width: 100vw;
+    }
+}

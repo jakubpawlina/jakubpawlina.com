@@ -1,24 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jakub Pawlina</title>
+
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&family=Rajdhani&display=swap" rel="stylesheet">
-	<title>Jakub Pawlina</title>
+
+    <link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
 </head>
-<body>
-	<div class="container">
-		<div class="title"><a href="index.html">Jakub Pawlina</a></div>
-		<ul class="menu">
-			<li>&#187; <a href="about.html">about</a></li>
-			<li>&#187; <a href="socials.html">socials</a></li>
-			<li>&#187; <a href="projects.html">projects</a></li>
-		</ul>
-	</div>
+<body class="fira-mono-regular">
+    <nav class="main-nav fira-mono-medium">
+		<div class="menu-toggle">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+        <div class="menu-items">
+			<a href="#" onclick="loadIndexContent()">Home</a>
+			<a href="#about" onclick="loadContent('about.html', 'css/about.css')">About</a>
+			<a href="#socials" onclick="loadContent('socials.html', 'css/socials.css')">Socials</a>
+			<a href="#projects" onclick="loadContent('projects.html', 'css/projects.css')">Projects</a>
+			<a href="#cv" onclick="loadContent('cv.html', 'css/cv.css')">Resume</a>
+		</div>
+    </nav>
+
+    <div id="content">
+    </div>
+
+	<script src="js/menu.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/content-loader.js"></script>
+	<script src="js/aos.js"></script>
 </body>
 </html>
