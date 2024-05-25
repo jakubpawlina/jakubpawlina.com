@@ -1,0 +1,14 @@
+.socials {
+    max-width: 40vw;
+}
+
+@media only screen and (max-width: 992px) {
+    .socials {
+        max-width: 100vw;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-dark);
+}

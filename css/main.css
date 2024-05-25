@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
+
+:root {
+    --primary-light: #f9f9f9;
+    --secondary-light: #f1f2f2;
+    --primary-dark: #3d3f44;
+    --padding: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--primary-dark);
+    background-color: var(--primary-light);
+}
+
+.main-nav {
+    color: var(--primary-light);
+    background-color: var(--primary-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 10000;
+    width: 100vw;
+    height: 50px;
+}
+
+.main-nav a {
+    color: var(--primary-light);
+    text-decoration: none;
+    display: block;
+    width: 100px;
+    text-align: center;
+    padding: var(--padding);
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.main-nav a:hover {
+    background-color: var(--secondary-light);
+    color: var(--primary-dark);
+    font-weight: bold;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-toggle.open span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-toggle.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.open span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 10001;
+    }
+    
+    .menu-toggle span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: var(--primary-light);
+        margin: 5px 0;
+    }
+
+    .menu-items {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background-color: var(--primary-dark);
+    }
+
+    .menu-items a {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .menu-items a:hover {
+        background-color: var(--secondary-light);
+        color: var(--primary-dark);
+        font-weight: bold;
+    }
+
+    .menu-items.active {
+        display: flex;
+    }
+}
+
+#content {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 100%;
+    min-height: calc(100vh - 200px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fira-mono-regular {
+    font-family: "Fira Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fira-mono-medium {
+    font-family: "Fira Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.fira-mono-bold {
+    font-family: "Fira Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.container {
+    padding: var(--padding);
+    display: flex;
+    flex-direction: row;
+}
+
+.inner-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.profile-picture {
+    width: 30vw;
+    padding: var(--padding);
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+	justify-content: center;
+    padding: var(--padding);
+    flex-grow: 1;
+}
+
+@media only screen and (max-width: 992px) {
+    .inner-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .profile-picture {
+        width: 100%;
+        padding: 0;
+    }
+}
