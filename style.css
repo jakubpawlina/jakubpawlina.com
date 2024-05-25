@@ -1,0 +1,70 @@
+body
+{
+	background-color: #efefef;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	font-size: 18px;
+}
+
+a, a:visited
+{
+	text-decoration: underline;
+	color: #333;
+}
+
+a:hover
+{
+	color: cornflowerblue;
+}
+
+.container
+{
+	width: min(calc(100vw - 40px), 600px);
+	padding: 20px;
+	font-family: 'Rajdhani', sans-serif;
+}
+
+.title
+{
+	font-family: 'Dosis', sans-serif;
+	font-size: 40px;
+	font-weight: 200;
+}
+
+.title a
+{
+	text-decoration: none;
+	color: #000;
+	font-weight: 400;
+}
+
+.menu
+{
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	margin-top: 4px;
+	margin-bottom: 30px;
+}
+
+.menu > li
+{
+	margin-right: 10px;
+	font-size: 20px;
+}
+
+.menu > li > a
+{
+	text-decoration: none;
+}
+
+.about
+{
+	line-height: 1.5;
+}
