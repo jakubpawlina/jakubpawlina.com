@@ -12,6 +12,7 @@
 .about-project {
     padding: var(--padding);
     flex-grow: 1;
+    max-width: 40vw;
 }
 
 .project-picture {
@@ -24,5 +25,9 @@
 @media only screen and (max-width: 768px) {
     .project {
         flex-direction: column-reverse;
+    }
+
+    .about-project {
+        max-width: 100vw;
     }
 }
