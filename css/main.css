@@ -163,6 +163,12 @@ body {
     flex-grow: 1;
 }
 
+.copyright {
+    text-align: center;
+    padding: calc(2 * var(--padding));
+    background-color: var(--secondary-light);
+}
+
 @media only screen and (max-width: 992px) {
     .inner-container {
         width: 100%;
