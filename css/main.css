@@ -154,6 +154,7 @@ body {
 .profile-picture {
     width: 30vw;
     padding: var(--padding);
+    max-width: 60vh;
 }
 
 .about {
