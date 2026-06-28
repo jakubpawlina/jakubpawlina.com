@@ -1,44 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="description" content="Jakub Pawlina — Test Automation Developer at Geotab. Solving problems and building ideas across IoT testing, automation, cybersecurity, product design and engineering projects.">
+<meta name="theme-color" content="#070b12">
+<meta name="author" content="Jakub Pawlina">
+<meta property="og:title" content="Jakub Pawlina — Engineer & Builder">
+<meta property="og:description" content="Solving Problems, Building Ideas — Where Tech Meets Vision.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jakubpawlina.com">
+<meta name="twitter:card" content="summary">
+<title>Jakub Pawlina — Engineer & Builder</title>
 
-    <title>Jakub Pawlina</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Share+Tech+Mono&family=Tektur:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
 
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
-    <link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Jakub Pawlina","url":"https://jakubpawlina.com","sameAs":["https://github.com/jakubpawlina","https://www.linkedin.com/in/jakub-pawlina/","https://orcid.org/0009-0006-1387-4606"],"jobTitle":"Test Automation Developer","worksFor":{"@type":"Organization","name":"Geotab"},"alumniOf":{"@type":"CollegeOrUniversity","name":"AGH University of Science and Technology"},"address":{"@type":"PostalAddress","addressLocality":"Kraków","addressCountry":"PL"}}
+</script>
 </head>
-<body class="fira-mono-regular">
-    <nav class="main-nav fira-mono-medium">
-		<div class="menu-toggle">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-        <div class="menu-items">
-			<a href="#" onclick="loadIndexContent()">home</a>
-			<a href="#about" onclick="loadContent('about.html', 'css/about.css')">about</a>
-			<a href="#projects" onclick="loadContent('projects.html', 'css/projects.css')">projects</a>
-			<a href="#cv" onclick="loadContent('cv.html', 'css/cv.css')">resume</a>
-			<a href="#contact" onclick="loadContent('contact.html', 'css/contact.css')">contact</a>
-			<a href="https://notes.jakubpawlina.com/">blog</a>
-		</div>
-    </nav>
+<body>
+<a class="skip-link" href="#main">skip to content</a>
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
 
-    <div id="content">
+<nav aria-label="Main navigation">
+  <a href="#hero" class="logo">Jakub Pawlina</a>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
+    <span class="nav-toggle-lines"></span>
+  </button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#about">about</a></li>
+    <li><a href="#experience">experience</a></li>
+    <li><a href="#projects">projects</a></li>
+    <li><a href="#notes">notes</a></li>
+    <li><a href="#contact">contact</a></li>
+    <li><a href="assets/cv-jakub-pawlina.pdf" target="_blank" rel="noopener">cv</a></li>
+  </ul>
+</nav>
+
+<main id="main">
+  <section id="hero">
+    <div class="wrap">
+      <div class="hero-inner">
+        <div class="hero-tag"><span class="dot"></span> shipping ideas into reality</div>
+        <h1>Jakub<br><em>Pawlina</em></h1>
+        <div class="hero-sub">// engineer · builder · problem-solver</div>
+        <p class="hero-desc"><em>Solving Problems, Building Ideas — Where Tech Meets Vision.</em> A creative problem-solver working at the intersection of automation, IoT quality engineering, cybersecurity and product-minded delivery.</p>
+        <div class="hero-location">Kraków, Poland</div>
+      </div>
     </div>
+  </section>
 
-	<div class="copyright">
-		&copy; Jakub Pawlina, 2025. All rights reseved.
-	</div>
+  <hr class="divider">
 
-	<script src="js/menu.js"></script>
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/content-loader.js"></script>
-	<script src="js/aos.js"></script>
+  <section id="about">
+    <div class="wrap">
+      <div class="section-eye">about</div>
+      <div class="about-grid">
+        <div>
+          <p class="about-text">Creative problem-solver with a passion for technology, leadership and innovation. Experienced in IoT testing and automation, with a growing interest in cybersecurity and product design — building skills at the intersection of tech and impact.</p>
+          <p class="about-text">Working full-time as <strong>Test Automation Developer at Geotab</strong>. Graduated with a <strong>BSc in Computer Science from AGH University of Science and Technology</strong> and currently pursuing an <strong>MSc</strong> alongside professional work.</p>
+          <div class="chips" id="skills"></div>
+        </div>
+        <aside class="about-aside">
+          <div class="stats" id="stats"></div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="experience">
+    <div class="wrap">
+      <div class="section-eye">experience &amp; education</div>
+      <div class="timeline" id="timeline"></div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="projects">
+    <div class="wrap">
+      <div class="section-eye">projects</div>
+      <div class="projects-head">
+        <p class="projects-intro">Selected work from public portfolio, client projects, academic work and experiments.</p>
+        <a class="btn btn-ghost" href="https://github.com/jakubpawlina" target="_blank" rel="noopener">github</a>
+      </div>
+      <div class="project-toolbar">
+        <span class="count-label" id="project-count"></span>
+      </div>
+      <div class="projects-grid" id="projects-grid"></div>
+      <div class="load-row">
+        <button class="btn btn-primary" type="button" id="load-more-projects">load more projects</button>
+        <button class="btn btn-ghost" type="button" id="show-less-projects">show less</button>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="notes">
+    <div class="wrap">
+      <div class="section-eye">notes / writing</div>
+      <div class="notes-grid">
+        <div class="note-panel">
+          <h3>technical notes</h3>
+          <p>A personal notebook about computer science, cybersecurity and more.</p>
+          <div class="project-actions">
+            <a class="plink" href="https://notes.jakubpawlina.com/" target="_blank" rel="noopener">open notes</a>
+            <a class="plink" href="https://notes.jakubpawlina.com/feed.xml" target="_blank" rel="noopener">rss</a>
+          </div>
+        </div>
+        <div class="note-panel"><div class="post-list" id="post-list"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="section-eye">contact</div>
+      <div class="contact-block">
+        <div class="contact-grid">
+          <div class="ccard"><div class="ccard-icon">@</div><div><div class="ccard-label">email</div><div class="ccard-val"><a href="mailto:jakub@jakubpawlina.com">jakub@jakubpawlina.com</a> <a href="https://keys.mailvelope.com/pks/lookup?op=get&search=jakub%40jakubpawlina.com" target="_blank" rel="noopener">(PGP)</a></div></div></div>
+          <div class="ccard"><div class="ccard-icon">@</div><div><div class="ccard-label">email</div><div class="ccard-val"><a href="mailto:jakub.pawlina@outlook.com">jakub.pawlina@outlook.com</a></div></div></div>
+          <div class="ccard"><div class="ccard-icon">☎</div><div><div class="ccard-label">phone</div><div class="ccard-val"><a href="tel:+48789429545">+48 789 429 545</a></div></div></div>
+        </div>
+      </div>
+      <div class="contact-block">
+        <div class="contact-block-label">links</div>
+        <div class="contact-grid">
+          <a href="https://github.com/jakubpawlina" target="_blank" rel="noopener" class="ccard"><div class="ccard-icon">&lt;/&gt;</div><div><div class="ccard-label">github</div><div class="ccard-val">jakubpawlina</div></div></a>
+          <a href="https://www.linkedin.com/in/jakub-pawlina/" target="_blank" rel="noopener" class="ccard"><div class="ccard-icon">in</div><div><div class="ccard-label">linkedin</div><div class="ccard-val">jakub-pawlina</div></div></a>
+          <a href="https://twitter.com/jakub_pawlina" target="_blank" rel="noopener" class="ccard"><div class="ccard-icon">X</div><div><div class="ccard-label">twitter / x</div><div class="ccard-val">jakub_pawlina</div></div></a>
+          <a href="https://instagram.com/jrpawlina" target="_blank" rel="noopener" class="ccard"><div class="ccard-icon">ig</div><div><div class="ccard-label">instagram</div><div class="ccard-val">jrpawlina</div></div></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-copy">© 2026 jakub pawlina — jakubpawlina.com · kraków, poland</div>
+  <div class="footer-status"><span class="status-dot"></span> based in Kraków, Poland</div>
+</footer>
+
+<div class="modal-backdrop" id="project-modal" aria-hidden="true">
+  <section class="modal" role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
+    <div class="modal-head">
+      <div><div class="modal-kicker" id="project-modal-kicker">project</div><h2 class="modal-title" id="project-modal-title"></h2></div>
+      <button class="modal-close" type="button" data-close-modal aria-label="Close project details">×</button>
+    </div>
+    <div class="modal-body" id="project-modal-body"></div>
+  </section>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
